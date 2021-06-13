@@ -1,0 +1,42 @@
+{
+    "name": "aabosham/pdf-merger-laravel",
+    "description": "",
+    "keywords": ["merger","merge","pdf","manage","paginate", "laravel", "duplex merge"],
+    "license" : [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Michael Musso",
+            "email": "lynx@deltaaskii.com",
+            "homepage": "https://github.com/LynX39"
+        }, {
+            "name": "Ramon Smit",
+            "email": "rsmit@daltcore.com",
+            "homepage": "https://github.com/daltcore"
+        }, {
+            "name": "Marouan Sami",
+            "email": "sami.marwen.isetcom@gmail.com",
+            "homepage": "https://github.com/MarwenSami"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4"
+    },
+    "homepage" : "https://github.com/MarwenSami/lara-pdf-merger",
+    "autoload": {
+        "psr-0": {
+            "LynX39\\LaraPdfMerger": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LynX39\\LaraPdfMerger\\PdfMergerServiceProvider"
+            ],
+            "aliases": {
+                "PdfMerger": "LynX39\\LaraPdfMerger\\Facades\\PdfMerger"
+            }
+        }
+    }
+}
